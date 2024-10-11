@@ -2,6 +2,150 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.4.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.3.0...v4.4.0) (2024-07-05)
+
+
+### Features
+
+* Allow setting ALB specific tags ([#404](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/404)) ([bbf63ba](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/bbf63baaefe89650eb61fce51babf54b5ae29208))
+
+## [4.3.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.2.2...v4.3.0) (2024-04-04)
+
+
+### Features
+
+* Configure max_session_duration for the ECS Task Execution role ([#401](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/401)) ([c92654a](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/c92654a9dba29c67614a0864ce209ba6c7a1a420))
+
+## [4.2.2](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.2.1...v4.2.2) (2024-03-07)
+
+
+### Bug Fixes
+
+* Update CI workflow versions to remove deprecated runtime warnings ([#400](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/400)) ([8acee87](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/8acee87e001f3e3fce4b89406011e00803cbcf87))
+
+### [4.2.1](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.2.0...v4.2.1) (2024-03-04)
+
+
+### Bug Fixes
+
+* Change default deployment percentages when using EFS to allow updates to succeed ([#399](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/399)) ([834bc0d](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/834bc0da151eabaa459ebe838fc1ca6e4184d11e))
+
+## [4.2.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.1.0...v4.2.0) (2024-01-18)
+
+
+### Features
+
+* Add support for different name for EFS ([#392](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/392)) ([bf31af0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/bf31af0c27f0e060ec1e7735e365e82925e0e531))
+
+## [4.1.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.8...v4.1.0) (2024-01-18)
+
+
+### Features
+
+* Configurable default action https listener ([#391](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/391)) ([7e75eec](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/7e75eec8a67bc428263e73320922a279081ac0bb))
+
+### [4.0.8](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.7...v4.0.8) (2023-12-22)
+
+
+### Bug Fixes
+
+* Add ALB Target Group Name ([#389](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/389)) ([8e6599f](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/8e6599f0a03c4d0fd99359838a12518b77b087e2))
+
+### [4.0.7](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.6...v4.0.7) (2023-12-21)
+
+
+### Bug Fixes
+
+* Add 'Name' Tag to EFS File System ([#387](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/387)) ([fb4acfc](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/fb4acfc252e15aa3c0a12df8f4e36de43621cdcc))
+
+### [4.0.6](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.5...v4.0.6) (2023-12-11)
+
+
+### Bug Fixes
+
+* FQDN detection when using an existing ALB ([#379](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/379)) ([50ee855](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/50ee85553f7473c9d4e680b7cbb172de5304798d))
+
+### [4.0.5](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.4...v4.0.5) (2023-11-30)
+
+
+### Bug Fixes
+
+* Correct ALB atlantis target group protocol and port arguments ([#375](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/375)) ([cc3e2c2](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/cc3e2c282f009694d5ce69d3d7d40a0cf0748c7d))
+
+### [4.0.4](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.3...v4.0.4) (2023-11-30)
+
+
+### Bug Fixes
+
+* Give Atlantis write permission to EFS ([#376](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/376)) ([1db4a44](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/1db4a445b4e3aab3a00995838273c3589d39ca17))
+
+### [4.0.3](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.2...v4.0.3) (2023-11-16)
+
+
+### Bug Fixes
+
+* Correct security group egress rule lookup name ([#372](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/372)) ([a5e3f83](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/a5e3f837b7c1735690cb1439459461ff0c78614c))
+
+### [4.0.2](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.1...v4.0.2) (2023-11-10)
+
+
+### Bug Fixes
+
+* Ensure conditional creation of EFS and entire module are functioning as intended ([#370](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/370)) ([2a8d178](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/2a8d178773d1ec3b2cbae5bac4f1da99ba6a4963))
+
+### [4.0.1](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v4.0.0...v4.0.1) (2023-11-10)
+
+
+### Bug Fixes
+
+* Correct EFS mount and correct listener authentication when value is not provided ([#368](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/368)) ([e031208](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/e0312088d38e4793673961069d2cf5bf22f2263f))
+
+## [4.0.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.28.0...v4.0.0) (2023-11-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Refactor to use latest modules provided by `terraform-aws-modules` (#366)
+
+### Features
+
+* Refactor to use latest modules provided by `terraform-aws-modules` ([#366](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/366)) ([65d1982](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/65d19824d9f30b7f0489a364c1be87e4046c1d93))
+
+## [3.28.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.27.0...v3.28.0) (2023-05-12)
+
+
+### Features
+
+* Make the enable_nat_gateway and single_nat_gateway variables configurable ([#343](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/343)) ([375a926](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/375a926af8c5c9020e21861b45eb5cb9380cf776))
+
+## [3.27.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.26.1...v3.27.0) (2023-05-12)
+
+
+### Features
+
+* Add EFS performance settings. ([#339](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/339)) ([ba3ecf9](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/ba3ecf96bcef5c32653219f06a3c373af1aca6bf))
+
+### [3.26.1](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.26.0...v3.26.1) (2023-05-12)
+
+
+### Bug Fixes
+
+* Gitlab versioning errors with terraform 0.13 ([#344](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/344)) ([359ab38](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/359ab388ec9e34261268bd927e4013f8a7a230ea))
+
+## [3.26.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.25.0...v3.26.0) (2022-12-15)
+
+
+### Features
+
+* Add ability to enable cross-zone load balancing ([#326](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/326)) ([1d1c75f](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/1d1c75f3396550920e4f55f2c2e10b99d39eecbb))
+
+## [3.25.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.24.1...v3.25.0) (2022-11-16)
+
+
+### Features
+
+* Use base security-group module to remove duplicate EFS security group ([#325](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/325)) ([8433f55](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/8433f5562daba6a1bcf28a57982564827f7bfed8))
+
 ### [3.24.1](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.24.0...v3.24.1) (2022-11-07)
 
 
